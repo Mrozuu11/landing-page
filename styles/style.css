@@ -2,11 +2,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
+    font-size: 18px;
 }
 
 header, footer {
     background-color: #1F2937;
-    padding: 0 15% 0 15%;
+    padding: 0 15%;
 }
 
 h1, .logo {
@@ -15,13 +16,36 @@ h1, .logo {
 
 h1 {
     font-size: 48px;
-    font-weight: bolder;
+    font-weight: 1000;
+    margin: 0;
+    padding: 0;
 }
 
 .top-bar {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+}
+
+.head {
+    display: flex;
+    padding: 8% 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.head-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 450px;
+}
+
+.top-img {
+    width: 50%;
+    height: auto;
 }
 
 .logo {
@@ -34,10 +58,8 @@ ul {
     list-style-type: none;
 }
 .secondary-text, a {
-    
     text-decoration: none;
     color: #e5e7eb;
-    font-size: 18px;
 }
 
 .section-one, .section-two, .section-three {
@@ -45,31 +67,56 @@ ul {
 }
 
 .section-one {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+h2 {
     color: #1F2937;
     font-size: 36px;
-    font-weight: bolder;
+    font-weight: 1000;
+}
+
+.container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 52px;
+}
+
+.animal {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #3882f6;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.image {
+    max-width: 200px;
 }
 
 .section-two {
     background-color: #e5e7eb;
+    padding: 100px 23% 100px 23%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 23%;
 }
+
 
 .p1 {
     color: #1F2937;
     font-style: italic;
-    font-size: 36px;
+    font-size: 32px;
 }
 
 .Thor {
     margin-left:auto;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .section-three {
@@ -81,15 +128,18 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .text {
-    display: flex;
-    flex-direction: column;
+    color: #f9faf8;
 }
 
+h3 {
+    margin: 0;
+    padding: 0;
+}
 .Sign-up {
-    display: flex;
     border: 1px solid white;
 }
 
@@ -97,10 +147,13 @@ footer {
     display: flex;
     justify-content: center;
     color: #e5e7eb;
-    font-size: 18px;
+    padding: 30px;
 }
 
 button {
     background-color: #3882f6;
     color: #f9faf8;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
 }
